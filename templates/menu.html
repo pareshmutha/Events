@@ -1,0 +1,31 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="clsMainHeader">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+			  <ion-nav-buttons side="right">
+                <button class="button button-icon button-clear ion-android-more-vertical"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21" class="clsAppBackground clsMenu">
+        <ion-content padding="false" style="top:0px !important;" class="side-menu-left ">
+            <ion-list id="menu-null">
+                <ion-item class="item-avatar item-icon-right clsAppBackground" id="menu-list-item4">
+                    <img src="img/user-default.png">
+					<h2 class="clsMenuUser">User
+                        <p>Demo</p>
+                        <i class="icon ion-log-out"></i>
+                    </h2>
+                </ion-item>
+                <ion-item class="item-icon-left" class="clsAppBackground" id="menu-list-item1" ui-sref="menu.home" menu-close="">
+                    <i class="icon ion-mic-c"></i>Events</ion-item>
+               
+               
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
