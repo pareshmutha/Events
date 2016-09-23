@@ -1,5 +1,7 @@
 angular.module('app.routes', [])
-
+.constant('eventsConstant', {
+		BASE_URL: "http://139.59.29.134:8080/Messenger/webapi/" 
+	} )
 .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
 $ionicConfigProvider.navBar.alignTitle('center');
   // Ionic uses AngularUI Router which uses the concept of states
@@ -15,7 +17,7 @@ $ionicConfigProvider.navBar.alignTitle('center');
     views: {
       'side-menu21': {
         templateUrl: 'templates/home.html',
-        controller: 'homeCtrl'
+        controller: 'eventsCtrl'
       }
     }
   })

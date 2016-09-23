@@ -1,3 +1,10 @@
+@font-face {
+    font-family: UbuntuCondensed;
+    src: url(UbuntuCondensed-Regular.ttf);
+}
+*{
+	font-family:UbuntuCondensed !important;
+}
 .platform-ios .manual-ios-statusbar-padding{
 	padding-top:20px;
 }
@@ -17,19 +24,23 @@ ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidt
 	border-right: 0px;
 }
 .clsAppBackground{
-	background:#444 !important;
+	background:rgb(44,44,44) ;
 	color:#fff;
 }
 .clsMenu .item  ,.clsMenu.item-complex ,.clsMenu .item-content{
-	background:#444 !important;
+	background:rgb(44,44,44) ;
 	color:#fff;
-	border-color: #980519;
+	border: 0;
 }
 .clsMenuUser ,.clsMenuUser p{
 	color:#fff;
 }
 .clsMainHeader{
-	background:#980519;
+	background:rgb(227,49,36);
+	color:#fff;
+	border: 0;
+}
+.clsMainHeader .title{
 	color:#fff;
 }
 .clsMainEvent .ion-unlocked{
@@ -37,4 +48,58 @@ ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidt
 }
 .clsMainEvent .ion-locked{
 	color:red;
+}
+.clsProfileImg{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	border:3px solid #fff;
+	margin-top: 15px;
+    margin-bottom: 8px;
+}
+.clsProfileName{
+	color: #fff;
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.clsMenuItemSelected .item-content{
+	background:rgb(227,49,36) !important;
+}
+.icon,.button-clear.button-icon{
+	color:#fff ;
+}
+.tabs-striped.tabs-positive .tabs{
+	background:rgb(227,49,36);
+	color:#fff;
+}
+.tab-title{
+	font-size:17px;
+}
+.clsInputText{
+	width:100%;
+}
+.clsInputText::-webkit-input-placeholder{
+	//text-align:center;
+}
+.clsUploadBtn{
+	color: rgb(227,49,36) !important;
+    float: right;
+    top: -44px;
+    font-size: 30px;
+	
+}
+.clsEveDate{
+	top: 10px;
+    position: relative;
+    padding-left: 2px;
+}
+.clsBtn{
+	border-color: transparent;
+    background-color: rgb(227,49,36);
+    color: #fff;
+	margin:0 auto;
+    margin-top: 5% !important;
+    border-radius: 5px!important;
+	width:80%!important;
 }
