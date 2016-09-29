@@ -1,19 +1,24 @@
-<ion-view title="Login" id="page4">
-    <ion-content padding="true" class="has-header">
-        <form id="login-form1" class="list">
-            <ion-list id="login-list2">
-                <label class="item item-input" id="login-input1">
-                    <span class="input-label">Username</span>
-                    <input type="text" placeholder="">
+<ion-modal-view  class="loginModal">
+    <ion-content scroll="false">
+			<div class="clsLoginTitle">Welcome
+			</div>
+			<div class="clsLoginform">
+                <label class="item item-input item-floating-label item-icon-left clsFormItem">
+                    <span class="input-label">Email</span>
+                    <input class="clsLoginInput" type="email" placeholder="Email" ng-model="user.email">
                 </label>
-                <label class="item item-input" id="login-input2">
+                <label class="item item-input item-floating-label clsFormItem">
                     <span class="input-label">Password</span>
-                    <input type="password" placeholder="">
+                    <input class="clsPassInput" type="password" placeholder="Password" ng-model="user.password">
                 </label>
-            </ion-list>
-            <div class="spacer" style="height: 40px;"></div>
-            <button id="login-button1" class="button button-stable  button-block">Log in</button>
-            <a href="#" onclick="window.open('/signup', '_system', 'location=yes'); return false;" id="login-button2" class="button button-positive  button-block button-clear">Or create an account</a>
-        </form>
+           </div>
+            <div class="padding">
+                <button type="submit" ng-click="login()" class="button button-block clsLoginBtn">
+                    <i class="icon"></i>
+                    Log in
+                </button>
+				<div class="clsSignUp" ng-click="signUp()">No Account? Create One</div>
+            </div>
+       
     </ion-content>
-</ion-view>
+</ion-modal-view>

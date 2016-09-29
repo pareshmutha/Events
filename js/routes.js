@@ -11,56 +11,51 @@ $ionicConfigProvider.navBar.alignTitle('center');
   $stateProvider
     
   
-
-      .state('menu.home', {
-    url: '/page1',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/home.html',
-        controller: 'eventsCtrl'
-      }
-    }
-  })
-
-  .state('menu.cart', {
-    url: '/page2',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/cart.html',
-        controller: 'cartCtrl'
-      }
-    }
-  })
-
-  .state('menu.cloud', {
-    url: '/page3',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/cloud.html',
-        controller: 'cloudCtrl'
-      }
-    }
-  })
-
-  .state('menu', {
-    url: '/side-menu21',
-    templateUrl: 'templates/menu.html',
-    controller: 'menuCtrl'
-  })
-
   .state('login', {
-    url: '/page4',
+    url: '/login',
     templateUrl: 'templates/login.html',
     controller: 'loginCtrl'
   })
-
   .state('signup', {
-    url: '/page5',
+    url: '/signup',
     templateUrl: 'templates/signup.html',
     controller: 'signupCtrl'
   })
+   
 
-$urlRouterProvider.otherwise('/side-menu21/page1')
+  .state('events', {
+    url: '/events',
+	abstract: true,
+    templateUrl: 'templates/menu.html',
+	controller: 'menuCtrl'
+  })
+  .state('events.home', {
+    url: '/events',
+	views: {
+		  'menuContent': {
+			templateUrl: 'templates/home.html',
+			controller: 'menuCtrl'
+		  }
+		}
+    
+  })
+
+  
+/*.state('app.dashboard', {
+		url: '/dashboard',
+		views: {
+		  'menuContent': {
+			templateUrl: 'templates/dashboard.html',
+			controller: 'menuCtrl'
+		  }
+		}
+		
+		
+	  })*/
+
+ 
+
+$urlRouterProvider.otherwise('/login');
 
   
 

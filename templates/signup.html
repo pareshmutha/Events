@@ -1,21 +1,28 @@
-<ion-view title="Signup" id="page5">
-    <ion-content padding="true" class="has-header">
-        <form id="signup-form2" class="list">
-            <ion-list id="signup-list3">
-                <label class="item item-input" id="signup-input3">
+<ion-modal-view  class="loginModal">
+    <ion-content scroll="false">
+			<div class="clsLoginTitle">Sign Up
+			</div>
+			<div class="clsLoginform">
+                <label class="item item-input item-floating-label item-icon-left clsFormItem">
                     <span class="input-label">Name</span>
-                    <input type="text" placeholder="">
+                    <input class="clsLoginInput" type="email" placeholder="Name" ng-model="user.email">
                 </label>
-                <label class="item item-input" id="signup-input4">
-                    <span class="input-label">Username</span>
-                    <input type="text" placeholder="">
+				<label class="item item-input item-floating-label item-icon-left clsFormItem">
+                    <span class="input-label">Email</span>
+                    <input class="clsLoginInput" type="email" placeholder="Email" ng-model="user.email">
                 </label>
-                <label class="item item-input" id="signup-input5">
+                              
+			   <label class="item item-input item-floating-label clsFormItem">
                     <span class="input-label">Password</span>
-                    <input type="text" placeholder="">
+                    <input class="clsPassInput" type="password" placeholder="Password" ng-model="user.password">
                 </label>
-            </ion-list>
-            <button id="signup-button3" class="button button-stable  button-block">Sign up</button>
-        </form>
+           </div>
+            <div class="padding">
+                <button type="submit" class="button button-block clsLoginBtn">
+                    SignUp
+                </button>
+				<div class="clsSignUp" ng-click="login()">Login?</div>
+            </div>
+       
     </ion-content>
-</ion-view>
+</ion-modal-view>

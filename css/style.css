@@ -103,3 +103,81 @@ ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidt
     border-radius: 5px!important;
 	width:80%!important;
 }
+
+.loginModal{
+    background:none;
+	background:rgb(227,49,36);
+	background-size:100% 100%;
+}
+.clsLoginContainer{
+	padding: 5%;
+}
+.clsLogintitle{
+	text-align: center;
+    font-size: 27px;
+    color: #fff;
+    padding-top: 30%;
+}
+.clsLoginBtn{
+	border-color: transparent;
+    background-color: #51c5d0;
+    color: #fff;
+	margin:0 auto;
+    margin-top: 10% !important;
+    border-radius: 5px!important;
+	cursor:pointer;
+	width:80%!important;
+	
+}
+.clsNewUserBtn{
+	border-color: transparent;
+    background-color: #51c5d0;
+    color: #fff;
+	margin:0 auto;
+    border-radius: 5px!important;
+	cursor:pointer;
+	width:80%!important;
+	
+}
+.clsUserRow{
+	border-bottom: 1.5px solid #ccc !important;
+	width:100%;
+	display:inline-block;
+	margin-top:5%;
+}
+.clsLoginTitle{
+	color: #fff;
+    font-size: 40px;
+    margin-top: 27%;
+    text-align: center;
+	 margin-bottom: 10%;
+}
+.clsLoginform{
+	padding:26px;
+	color:#fff;
+}
+.clsLoginform .item,.clsLoginform .input-label,.clsLoginform .item-input input{
+	color:#fff !important;
+}
+.clsLoginBtn{
+	background: #8a0f0f;
+	color:#fff;
+}
+.activated{
+	background:rgb(227,49,36) !important;
+	color:#fff;
+}
+.clsPassInput::-webkit-input-placeholder,.clsLoginInput::-webkit-input-placeholder{
+	color:#fff;
+}
+.clsSignUp{
+	color:#ecdbdb;
+	text-align:center;
+}
+.clsEventsMain .tab-nav,.clsEventsMain .tabs,.clsEventsMain .has-tabs-top{
+	top:0px!important;
+}
+.clsFormItem{
+	border: 0 !important;
+    border-bottom: 1px solid #fff !important;
+}
